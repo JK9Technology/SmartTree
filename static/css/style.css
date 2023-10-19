@@ -4,7 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("../../../qHKNdOVOl6o2.com/ionicons%404.5.10-0/dist/css/ionicons.min.css");
+@import url("https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css");
 @import url("https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900&display=swap");
 
 :root {
@@ -11335,7 +11335,7 @@ a.text-dark:hover {
 	top: 50%;
 	margin-left: -40px;
 	margin-top: -40px;
-	background: url(owl.video.play.png/index.html) no-repeat;
+	background: url(owl.video.play.png) no-repeat;
 	cursor: pointer;
 	z-index: 1;
 	-webkit-backface-visibility: hidden;
