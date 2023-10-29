@@ -1,0 +1,617 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Member Status </title>
+		<link rel="stylesheet" href="static/css/style.css">
+		<link rel="stylesheet" href="static/css/slick.min.css">
+		<link rel="stylesheet" href="static/css/main-css.css">
+		<link rel="stylesheet" href="static/css/mui.min.css">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+	
+		<style type="text/css">
+			.aui-palace {
+				position: relative;
+				overflow: hidden;
+				border: 10px;
+			}
+
+			.aui-palace-grid {
+				position: relative;
+				float: left;
+				padding: 1px;
+				width: 23%;
+				box-sizing: border-box;
+				margin-bottom: 15px;
+				margin: 0;
+				margin: 1%;
+			}
+
+			.aui-palace-grid-icon {
+				width: 90%;
+				margin: 0 auto;
+				border-radius: 8px;
+				padding: 10px;
+			}
+
+			.aui-palace-grid-icon img {
+				display: block;
+				border: none;
+				margin: auto;
+				width: 90%;
+			}
+
+			.aui-palace-grid-text {
+				display: block;
+				text-align: center;
+				color: #fff;
+				font-size: 14px;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
+
+			.aui-palace-grid-text h2 {
+				font-size: 13px;
+				font-weight: normal;
+				color: #ffffff;
+			}
+
+			.collapse {
+				color: #000;
+			}
+
+
+			.contentBox h1 {
+				color: #ffe1aa;
+				font-size: 22px;
+				text-align: center;
+			}
+
+			.hifon h1 {
+				font-size: 24px;
+				font-weight: 700;
+				text-align: center;
+			}
+
+			.postCarousel .item .title {
+				color: #fff;
+			}
+
+			.view {
+				text-align: center;
+				background: #0cc993;
+				width: 80px;
+				margin: auto;
+				border-radius: 4px;
+				color: #fff;
+				margin-top: 10px;
+			}
+
+			#appCapsule {
+				background: none;
+			}
+
+			.aboutd {
+				font-size: 20px;
+				font-weight: 700;
+			}
+
+			.bg-img {
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+			#tit {
+				height: auto;
+				width: 100%;
+				background: none;
+				border-radius: 10px;
+				white-space: nowrap;
+				display: flex;
+				overflow: auto;
+			}
+
+			#tit span {
+				float: left;
+				height: 34px;
+				line-height: 34px;
+				width: auto;
+				text-align: center;
+				margin: 4px;
+				color: #333;
+				margin: 4px;
+				background: #f8f9f9;
+				border-radius: 30px;
+				padding: 0 16px;
+			}
+
+			#tit span.select {
+				color: #fff;
+				background: linear-gradient(90deg, #82a4fd 0%, #d48ffa 100%);
+			}
+
+			.listView a.listItem {
+				background-image: none;
+			}
+
+			.ban {
+				padding: 67px 0 0;
+				background-size: 100%;
+			}
+
+			.homebane ul li {
+				float: left;
+				width: 50%;
+				list-style-type: none;
+				margin: 0;
+			}
+
+			.homebane ul li img {
+				width: 100%;
+			}
+
+			.choose-card {
+				padding: 20px;
+				background: #fff;
+				margin-bottom: 20px;
+				border-radius: 6px;
+			}
+
+			.choose-card h4,
+			.choose-card p {
+				color: #333 !important;
+			}
+
+			.postItem {
+				background: linear-gradient(90deg, #0073e7 0%, #0073e7 100%);
+			}
+
+			.postItem footer {
+				color: #fff;
+				background: #0160bf;
+			}
+
+			img[onload^="SVGInject("] {
+				visibility: hidden;
+			}
+
+			.contentBox {
+				background: #fff;
+				width: 100%;
+				padding: 6px;
+				border-radius: 4px;
+			}
+
+			.oumi img {
+				width: 100%;
+				border-radius: 4px;
+			}
+
+			.rune {
+				background: #fff;
+				border-radius: 4px;
+				padding: 6px;
+			}
+
+			.rune h1 {
+				color: #000 !important;
+			}
+
+			.itemList .item {
+				display: block !important;
+
+			}
+			.yue{width: 31%; padding: 0;}
+			.yue .aui-palace-grid-text{padding: 0 10px;}
+			.yue .aui-palace-grid-text h2{background: #fff; color: #333; padding: 4px 0; border-radius: 20px;}
+		
+
+	
+		img[onload^="SVGInject("] {
+			visibility: hidden;
+		}
+		
+					.guize_html {
+				width: 90%;
+				height: auto;
+				border-radius: 4px;
+				background-color: #fff;
+				color: #000;
+				text-align: center;
+				font-size: 12px;
+				margin: auto;
+				margin-top: 100px;
+				/* 		padding-bottom: 20px; */
+			}
+
+			.guize_html p {
+				font-size: 12px;
+				padding: 0 16px;
+				text-align: left;
+				text-indent: 2em
+			}
+
+			.guize_html_nei {
+				color: #0e1a32;
+				
+				overflow-y: auto;
+				max-height: 300px;
+				height: 300px;
+				display: block;
+				overflow-y: scroll;
+			}
+
+			.btnyu {
+				display: block;
+				margin: 10px auto;
+				height: 40px;
+				border-radius: 0 0 4px 4px;
+				background-color: #60ba74;
+				color: #fff;
+				text-align: center;
+				line-height: 40px;
+				cursor: pointer;
+			}
+
+			.overfloat {
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 9;
+				display: none;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(1, 1, 1, .5)
+			}
+
+			.guize_html img {
+				width: 75px;
+				margin-top: -30px;
+				background: #182730;
+				border-radius: 50%;
+			}
+			
+			.guize_html h5,p{
+				color:#333;
+			}
+			.jone img{width: 100%;}
+			
+			
+			
+			
+			
+			
+			   /* Styles for the overlay background */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+       .popup {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            width: 90%;
+		
+        }
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</style>
+
+	</head>
+
+	<body>
+
+
+		<div class="appHeader">
+	
+			<div class="pageTitle">Member Status</div>
+		
+				<div class="right">
+            
+	
+			  <a onclick="showPopup()" data-status="1" class="link">Upload </a>
+               <div id="popup" class="overlay">
+                   <div class="popup">
+                     
+                       <p>Status Upload allow only for VIP Members</p>
+                       <button onclick="closePopup()">Close</button>
+                   </div>
+               </div>
+			
+			
+			
+			
+			
+			
+			
+        </div>
+		
+		</div>
+		
+		
+
+					<div style="padding-top:58px;"></div>
+		
+				<div class="sectionTitle  mt-2 mb-10">
+		
+					<div class="itemList">
+					
+					
+			<div class="appContent pb-0 mt-1 pt-1">
+				<div class="listView detailed" style="padding-bottom: 82px;">
+					
+					
+	
+					
+
+
+
+
+
+
+						<div class="item">
+							<div class="image">
+								<img src="static/img/Commity.jpeg" alt="image">
+							</div>
+							<div class="text">
+								<h4 class="title">Smart Tree</h4>
+								<span>* Smart Tree Company, started in 2023, is working to provide financial freedom to all its members and make them self-reliant.  
+</br>
+* We are creating a big family which can help us all grow together.  
+</br>
+* There are different departments in the company and we can earn money from each department. 
+</br>
+1] Teaching area : </br>
+&nbsp &nbsp 1)  Stock Market Tips and Knowledge. </br> 
+&nbsp &nbsp 2)  Online Computer Course. </br>
+&nbsp &nbsp 3)  Smart Tuition Classes Franchise. </br>
+&nbsp &nbsp 4)  Digital Marketing. </br>
+&nbsp &nbsp 5)  Japanese Classes and Placement
+ </br>
+
+2] Refer Earning : The more you refer, the bigger the team you create, the more you will earn and depending on the size of the team, you will get a fixed bonus amount every year.  
+</br>
+3] Employment : Needy people of Smart Tree family will get employment. 
+</br>
+4] Monthly salary : Whichever member of the Smart Tree family achieves the target will be given a monthly salary. 
+</br>
+5] Fun Event : Zindagi jeena hai khul ke. 
+</br>
+6] Whoever adds his visiting card in Smart Tree Company will be given a discount or commission of 2% to 7% on whatever profit the members of our company make in their business.  
+</br>
+* In this way Smart Tree family will make its members financial freedom and self-reliant.  
+ </br>
+* Hurry up and confirm your subscription
+
+</br>
+---------------------------------------------------------------------------------------------------
+
+</br>
+<p>
+स्मार्ट ट्री कंपनी 2023 को शुरू हुई  कंपनी अपने सभी सदस्य को फाइनेंशियल फ्रीडम देने में और स्वावलंबी  होने में कार्य कर रही हैं।    
+</br>
+*  हम लोग एक बड़ा परिवार बना रहे हैं जो आपस में मिलकर सभी की ग्रोथ कर सके। 
+</br>
+*  कंपनी में अलग-अलग डिपार्टमेंट है और हम हर किसी डिपार्टमेंट से पैसा कमा सकते हैं।  
+</br>
+१ ]  शिक्षण क्षेत्र :     </br>
+&nbsp &nbsp     १)    स्टॉक मार्केट टिप्स एंड नॉलेज ।     </br>   
+&nbsp &nbsp     २)   ऑनलाइन कंप्यूटर कोर्स ।          </br>                      
+&nbsp &nbsp     ३)    स्मार्ट ट्यूशन क्लासेस  फ्रेंचाइजी ।    </br>   
+&nbsp &nbsp     ४)   डिजिटल मार्केटिंग।                           </br>             
+&nbsp &nbsp     ५)   जैपनीज क्लासेस और प्लेसमेंट                                             
+</br>
+ २ ]   रेफर अर्निंग :  जितना ज्यादा रेफर करेंगे जितनी बड़ी टीम बनाएंगे उतना ही ज्यादा अर्निंग होगी और जितनी टीम बढ़ेगी उसके बेस पर हर  साल एक फिक्स बोनस अमाउंट मिलते जाएगा ।    
+</br>
+३ ]  रोजगार :  स्मार्ट ट्री परिवार के जरूरतमंद लोगों को रोजगार प्राप्त होगा ।                                                    
+</br>
+४ ]   महीने का पगार :  स्मार्ट ट्री परिवार में से जो भी मेंबर का टारगेट अचीव हो जाएगा उसको महीने की सैलरी दी जाएगी।                                              
+</br>
+५ ]   फन इवेंट :  जिंदगी जीना है खुल के।                                                    
+</br>
+६ ]  स्मार्ट ट्री कंपनी में जो भी अपना विजिटिंग कार्ड ऐड करने वाले हैं उनके व्यवसाय में हमारे कंपनी के सदस्यों की तरफ से जो भी लाभ होता है उसके २% से 7% तक का डिस्काउंट या फिर कमीशन वह सदस्य को दी जाएगी।                                              
+</br>
+*  इस तरह स्मार्ट ट्री परिवार अपने सदस्यों को फाइनेंशियल फ्रीडम और स्वावलंबी बनाएगी।
+</br>
+ *  जल्दी कीजिए अपनी सदस्यता निश्चित कीजिए।
+</p>
+						</div>
+					</div>
+			
+
+
+
+					</div>
+				</div>
+			</div>
+			<!-- * appCapsule -->
+			<section class="panel-space"></section>
+
+
+
+			
+
+	
+		<div class="appBottomMenu">
+			<div class="item ">
+				<a href="index.html">
+					<p>
+	              <i class=""><img src="static/img/Home.svg"> </i>
+					</p>
+					<span>Home</span>
+				</a>
+			</div>
+			<div class="item ">
+				<a href="product.html">
+					<p>
+				  <i class=""><img src="static/img/Product.svg"> </i>
+					</p>
+					<span>Product</span>
+				</a>
+			</div>
+			
+			<div class="item active">
+				<a href="comment.html">
+					<p>
+						<i class=""><img src="static/img/Comments.svg"> </i>
+					</p>
+					<span>Community</span>
+				</a>
+			</div>
+
+			<div class="item ">
+				<a href="team.html" class="icon toggleSidebar">
+					<p>
+					    <i class=""><img src="static/img/Team.svg"> </i>
+					</p>
+					<span>Team</span>
+				</a>
+			</div>
+			<div class="item ">
+				<a href="My Account.html" class="icon toggleSidebar">
+					<p>
+							<i class=""><img src="static/img/Person.svg"> </i>
+					</p>
+					<span>Me</span>
+				</a>
+			</div>
+		</div>
+		
+		
+
+
+
+			<script src="static/js/jquery-3.4.1.min.js"></script>
+
+			<script src="static/js/svg-inject.min.js"></script>
+			<script src="static/js/slick.min.js"></script>
+			<script src="static/js/owl.carousel.min.js"></script>
+			<script type="text/javascript" src="static/js/superVideo.js"></script></body>
+			<script src="tatic/js/mui.min.js"></script>
+			<script>
+
+			  const video = new Super.Svideo('videoContainer', {
+				  source: new Super.VideoSource({ 
+					src: 'static/video/IMG_0642.MOV'
+				  }),
+				 
+			  })
+			 
+			</script>
+			<script type="text/javascript">
+				$('.home-slider').slick({
+					infinite: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '30px',
+					dots: true,
+					arrows: false,
+					autoplay: true,
+					autoplaySpeed: 3000
+				});
+
+				$('#tit span').click(function() {
+					var i = $(this).index();
+					$(this).addClass('select').siblings().removeClass('select');
+					$('#con li').eq(i).show().siblings().hide();
+				});
+			</script>
+
+
+			<script type="text/javascript">
+				$('.postCarousel').owlCarousel({
+					margin: 20,
+					loop: true,
+					stagePadding: 40,
+					items: 2,
+					dots: false,
+				});
+			</script>
+			
+			<script>
+				var islogin=0;
+				$(".live").click(function(){
+					
+					if(islogin==0){
+						mui.alert('Please log in to your account first');
+					}else{
+						window.open('');
+					}
+				})
+			
+				
+				$(".yue").click(function(){
+					
+					var percent=$(this).attr('data-id');
+					var z=100-percent;
+					mui.alert('Obtained through the lucky draw, purchase products '+z+'% off');
+				
+				})
+				
+				
+				var isview=0;
+					
+				if(isview==1){
+					 $("#gui_kai").show();
+				}
+
+				$('#g_close').click(function() {
+					$("#gui_kai").hide();
+				});
+			</script>
+
+
+
+
+ <script>
+        function showPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "flex"; // Show the overlay
+        }
+
+        function closePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none"; // Hide the overlay
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</body>
+</html>
